@@ -4,11 +4,11 @@
 
 **Company sections**
 
-|Field|Type|N|Key|Default|Comment|
+|Field|Type|Null|Key|Default|Comment|
 |-----|----|-|:-:|-------|-------|
-|`lID`|int|![](../images/unchecked.png)|![](../images/pri_key.png)|*not set*|Primary Key|
-|`strName`|varchar(50)|![](../images/unchecked.png)||*empty*||
-|`strDescription`|text|![](../images/unchecked.png)||*not set*||
+|`lID`|int|![No](../images/unchecked.png "Not NULL")|![PRI](../images/pri_key.png "Primary Key")|*not set*|Primary Key|
+|`strName`|varchar(50)|![No](../images/unchecked.png "Not NULL")||*empty*||
+|`strDescription`|text|![No](../images/unchecked.png "Not NULL")||*not set*||
 
 
 ## Tables referencing this Table

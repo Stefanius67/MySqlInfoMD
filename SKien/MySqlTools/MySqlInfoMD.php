@@ -503,7 +503,7 @@ class MySqlInfoMD
         $strMD = '';
         if (count($aRow) == 0) {
             // create the table header
-            $strMD .= $this->getTableRowMD(['Field', 'Type', 'N', 'Key', 'Default', 'Comment']);
+            $strMD .= $this->getTableRowMD(['Field', 'Type', 'Null', 'Key', 'Default', 'Comment']);
             $strMD .= $this->getTableRowMD(['-----', '----', '-', ':-:', '-------', '-------']);
         } else {
             $strMD .= $this->getTableRowMD([
@@ -727,8 +727,8 @@ class MySqlInfoMD
     {
         $strPath = $this->getImagePath();
         $aNull = [
-            'YES' => '![](' . $strPath . '/checked.png)',
-            'NO' => '![](' . $strPath . '/unchecked.png)',
+            'YES' => '![Yes](' . $strPath . '/checked.png "Allows NULL")',
+            'NO' => '![No](' . $strPath . '/unchecked.png "Not NULL")',
         ];
         return $aNull[$strNull];
     }
@@ -742,9 +742,9 @@ class MySqlInfoMD
         $strPath = $this->getImagePath();
         $aKey = [
             '' => '',
-            'PRI' => '![](' . $strPath . '/pri_key.png)',
-            'UNI' => '![](' . $strPath . '/uni_key.png)',
-            'MUL' => '![](' . $strPath . '/mul_key.png)'
+            'PRI' => '![PRI](' . $strPath . '/pri_key.png "Primary Key")',
+            'UNI' => '![UNI](' . $strPath . '/uni_key.png "Unique Key")',
+            'MUL' => '![MUL](' . $strPath . '/mul_key.png "Index")'
         ];
         return $aKey[$strKey];
     }
