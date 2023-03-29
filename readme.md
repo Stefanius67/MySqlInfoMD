@@ -51,6 +51,11 @@ $oInfo->setOptions(MySqlInfoMD::OPT_CREATE_SUBFOLDER | MySqlInfoMD::OPT_CREATE_S
 $oInfo->buildInfo();
 ```
 
+> **Note:**  
+> Since the Markdown renderer that is used at *phpClasses.org* do **not** support MD 
+> tables, you will not get a satisfactory display if you look at the example directly
+> in the source view window here in the package.
+
 ## Supported types
 The report can be generated for
 - `STANDALONE`
