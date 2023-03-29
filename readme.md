@@ -1,4 +1,4 @@
-# Create 'Add to my google calendar' Link to your Homepage
+# Generating report for a given MySQL database as MD-Files 
 
  ![Latest Stable Version](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)
  ![License](https://img.shields.io/packagist/l/gomoob/php-pushwoosh.svg) 
