@@ -8,7 +8,7 @@
 |-----|----|-|:-:|-------|-------|
 |`lID`|int|![No](../images/unchecked.png "Not NULL")|![PRI](../images/pri_key.png "Primary Key")|*not set*|Primary Key|
 |`lSectionID`|int|![Yes](../images/checked.png "Allows NULL")|![MUL](../images/mul_key.png "Index")|*null*|FK to Section table|
-|`lEmployeeNr`|int|![No](../images/unchecked.png "Not NULL")|![UNI](../images/uni_key.png "Unique Key")|*not set*|Unique employee nummber|
+|`lEmployeeNr`|int|![No](../images/unchecked.png "Not NULL")|![UNI](../images/uni_key.png "Unique Key")|*not set*|Unique employee number|
 |`strFirstName`|varchar(50)|![No](../images/unchecked.png "Not NULL")||*empty*||
 |`strLastName`|varchar(50)|![No](../images/unchecked.png "Not NULL")||*empty*||
 |`strStreet`|varchar(50)|![No](../images/unchecked.png "Not NULL")||*empty*||
@@ -35,7 +35,7 @@
 CREATE TABLE `Employee` (
   `lID` int NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
   `lSectionID` int DEFAULT NULL COMMENT 'FK to Section table',
-  `lEmployeeNr` int NOT NULL COMMENT 'Unique employee nummber',
+  `lEmployeeNr` int NOT NULL COMMENT 'Unique employee number',
   `strFirstName` varchar(50) COLLATE utf8mb3_german2_ci NOT NULL DEFAULT '',
   `strLastName` varchar(50) COLLATE utf8mb3_german2_ci NOT NULL DEFAULT '',
   `strStreet` varchar(50) COLLATE utf8mb3_german2_ci NOT NULL DEFAULT '',
